@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnica de Pomodoro</title>
+    <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div id="title-window">Pomodoro Timer</div>
+        </header>
+        <section>
+            <div id="div-timer">
+                <div id="title-pomodoro">
+                    Session
+                </div>
+                <div id="timer">
+                    <span id="min"></span>:
+                    <span id="seg"></span>
+                    <span id="mileseconds"></span>
+                </div>
+                <div class="button-style">
+                    <button type="button" value="Start" class="start">Start</button>
+                    <button type="button" value="Reset" class="reset">Reset</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="fundo">
+                <div id="session-length" width="50%">
+                    <p>Session Length</p>
+                    <div id="temp-session">
+                        <button type="button"
+                        id="button_more" name="more-time" value="session_1"></button>
+                        <div><span name="session">25</span> min</div>
+                        <button type="button"
+                        id="button_minus" name="minus-time" value="session_2"></button>
+                    </div>
+                </div>
+                <br>
+                <div id="break-length" width="50%">
+                    <p>Break Length</p>
+                    <div id="temp-break">
+                        <button type="button"
+                        id="button_more" name="more-time" value="break_1"></button>
+                        <div><span name="break">5</span> min</div>
+                        <button type="button"
+                        id="button_minus" name="minus-time" value="break_2"></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>

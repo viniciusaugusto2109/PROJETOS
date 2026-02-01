@@ -1,0 +1,198 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    margin: 0;
+    min-height: 90%;
+}
+
+body > div{
+    max-width: 1000px;
+    height: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+footer{
+    background: white;
+    padding: 0px 0px 200px;
+}
+
+#title-window{
+    display: flex;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    padding: 50px;
+    background-color: black;
+}
+
+#title-pomodoro{
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+#div-timer{
+    background-color: rgb(236, 8, 38);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px; 
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+}
+
+button[type="button"]{
+    width: 120px;
+    height: 7vh;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: 1s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.start{
+    background-image: url('./Imagens/play.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    padding-left: 20px;
+}
+
+.reset{
+    background-image: url('./Imagens/reiniciar.png');
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 40px;
+}
+
+.iniciar{
+    background-color: black;
+    color:white;
+    background-image: url('./Imagens/pausa.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    padding-left: 20px;
+}
+
+.resetar{
+    background-color: black;
+    color:white;
+    background-image: url('./Imagens/reset_branco.png');
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: 8px;
+    padding-left: 38px;
+}
+
+#session-length,
+#break-length {
+    color: black;
+    position: static;
+}
+
+#session-length{
+    position: absolute;
+    top: 650px;
+    z-index: 2;
+    left: 30%;
+}
+
+#session-length > p{
+    position: relative;
+    bottom: 20px;
+    z-index: 2;
+    margin-left: 1px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#session-length div{
+    gap: 25px;
+}
+
+#break-length{
+    position: absolute;
+    top: 640px;
+    z-index: 2;
+    right: 30%;
+}
+
+#break-length p{
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+}
+
+#temp-session div{
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+#break-length div{
+    position: relative;
+    bottom: -10px;
+    text-align: left;
+    gap: 25px;
+    font-size: 19px;
+}
+
+#temp-session{
+    display: flex;
+    top: 1000px;
+    gap: 5px;
+}
+
+#session-length p{
+    left: 30px;
+}
+
+#temp-break{
+    display: flex;
+    gap: 5px;
+}
+
+footer button[type="button"]{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+}
+
+#button_more{
+    background-image: url("./Imagens/mais.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#button_minus{
+    background-image: url("./Imagens/menos.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img{
+    width: 50%;
+}
